@@ -1,0 +1,82 @@
+[
+  {
+    "Nombre": "Jabon Liquido matic limzul",
+    "Descripcion": "Jabon Liquido Matic Limzul Bot 800 Ml",
+    "Precio": 399.99,
+    "FotoUrl": "images/productos/jabonAla.jpg",
+    "TipoId": 1,
+    "MarcaId": 1
+  },
+  {
+    "Nombre": "P.Higienico 80 Mts Campanita X 4 32 M2",
+    "Descripcion": "P.Higienico 80 Mts Campanita X 4 32 M2",
+    "Precio": 700.50,
+    "FotoUrl": "images/productos/papelcampanita.jpg",
+    "TipoId": 2,
+    "MarcaId": 2
+  },
+  {
+    "Nombre": "Lavandina Común Odex 2 Ltr",
+    "Descripcion": "Lavandina Común Odex 2 Ltr",
+    "Precio": 221.99,
+    "FotoUrl": "images/productos/lavandinaOdex.jpg",
+    "TipoId": 3,
+    "MarcaId": 3
+  },
+  {
+    "Nombre": "Suavizante P/Ropa Caricias 900ml",
+    "Descripcion": "Suavizante para ropa caricias 900ml",
+    "Precio": 322.54,
+    "FotoUrl": "images/productos/suavizantecaricias.jpg",
+    "TipoId": 1,
+    "MarcaId": 4
+  },
+  {
+    "Nombre": "Jabon Liquido Blue Power Zorro 800ml",
+    "Descripcion": "Jabon Liquido Blue Power Zorro 800ml",
+    "Precio": 254.99,
+    "FotoUrl": "images/productos/zorrobluepower.jpg",
+    "TipoId": 1,
+    "MarcaId": 5
+  },
+  {
+    "Nombre": "Papel Higienico hoja simple Elite x4",
+    "Descripcion": "Papel higienico con aloe vera 4 rollos 80m",
+    "Precio": 769.97,
+    "FotoUrl": "images/productos/papelelitex4.jpg",
+    "TipoId": 2,
+    "MarcaId": 6
+  },
+  {
+    "Nombre": "Papel Higiénico HIGIENOL Max Hoja Simple Panal 4 Unid X 100 Mts C/U ",
+    "Descripcion": "Papel Higiénico HIGIENOL Max Hoja Simple Panal Paq 4 Unid X 100 Mts C/U",
+    "Precio": 769.97,
+    "FotoUrl": "images/productos/papelhigienolmax.jpg",
+    "TipoId": 2,
+    "MarcaId": 7
+  },
+  {
+    "Nombre": "Lavandina Ayudín Clásica 4l",
+    "Descripcion": "La Lavandina Ayudín Clásica Mantiene Todo Su Poder Para Desodorizar Y Desinfectar. Elimina El 99,9% De Bacterias Y Virus",
+    "Precio": 725.02,
+    "FotoUrl": "images/productos/ayudin4l.jpg",
+    "TipoId": 3,
+    "MarcaId": 8
+  },
+  {
+    "Nombre": "Lavandina AYUDÍN Triple Poder Lavanda 4 L",
+    "Descripcion": "La Lavandina AYUDÍN Triple Poder Aroma Lavanda Contiene Una Agradable Fragancia Que Sustituye El Olor De La Lavandina Tradicional, Manteniendo Todo Su Poder De Desinfección, Cuidado Y Limpieza",
+    "Precio": 811.40,
+    "FotoUrl": "images/productos/ayudinlavanda.jpg",
+    "TipoId": 3,
+    "MarcaId": 8
+  },
+  {
+    "Nombre": "Papel Higienico Rinde Hoja Simple Higienol 20 M2",
+    "Descripcion": "Papel Higienico Rinde Hoja Simple Higienol 20 M2",
+    "Precio": 562.27,
+    "FotoUrl": "images/productos/papelhigienolrinde.jpg",
+    "TipoId": 2,
+    "MarcaId": 7
+  }
+]

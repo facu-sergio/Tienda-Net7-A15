@@ -1,3 +1,4 @@
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
@@ -14,8 +15,8 @@ builder.Services.AddDbContext<TiendaContext>(cfg =>
 {
     cfg.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
-
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,8 +26,26 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//Aplicar migraciones y crear bd si es necesario
+using var scope =  app.Services.CreateScope();
+var services = scope.ServiceProvider;
+var context = services.GetRequiredService<TiendaContext>();
+var logger = services.GetRequiredService <ILogger<Program>>();
+
+try
+{
+    await context.Database.MigrateAsync();
+    await TiendaContextSeed.SeedAsync(context);
+}
+catch (Exception ex)
+{
+    logger.LogError(ex, "Un error ocurio durante la migracion");
+}
+
 
 app.Run();
