@@ -4,12 +4,11 @@ using Core.Interfaces;
 using Core.Specifications;
 using Microsoft.AspNetCore.Mvc;
 using TiendaApi.Dtos;
+using TiendaApi.Errors;
 
 namespace TiendaApi.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductosController : ControllerBase
+    public class ProductosController : BaseApiController
     {
         private readonly IGenericRepository<Producto> _productoRepo;
         private readonly IGenericRepository<Marca> _marcaRepo;
@@ -34,11 +33,13 @@ namespace TiendaApi.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProductoDto>> GetProducto(int id)
         {
             var spec = new ProductosConMarcaYTipoSpecification(id);
             var producto = await _productoRepo.getEntityWithSpec(spec);
-
+            if (producto == null) return NotFound(new ApiResponse(404));
             return _mapper.Map<ProductoDto>(producto);
         }
 
