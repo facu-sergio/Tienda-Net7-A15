@@ -1,15 +1,11 @@
-using Core.Interfaces;
 using Infrastructure.Data;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TiendaApi.Errors;
 using TiendaApi.Extensions;
 using TiendaApi.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddAplicationServices(builder.Configuration);
 
@@ -23,6 +19,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseStaticFiles();
+app.UseCors("CorsPolicy");
+
 app.UseAuthorization();
 
 app.MapControllers();

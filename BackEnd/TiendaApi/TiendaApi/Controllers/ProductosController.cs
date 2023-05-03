@@ -5,6 +5,7 @@ using Core.Specifications;
 using Microsoft.AspNetCore.Mvc;
 using TiendaApi.Dtos;
 using TiendaApi.Errors;
+using TiendaApi.Helpers;
 
 namespace TiendaApi.Controllers
 {
@@ -24,12 +25,19 @@ namespace TiendaApi.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductoDto>>> GetProductos()
+        public async Task<ActionResult<Pagination<ProductoDto>>> GetProductos( [FromQuery]ProductSpecParams productParams)
         {
-            var spec = new ProductosConMarcaYTipoSpecification();
+            var spec = new ProductosConMarcaYTipoSpecification(productParams);
+            var countSpec = new ContarProductosConFiltrosSpecificacion(productParams);
+
+            var totalItems =  await _productoRepo.CountAsync(countSpec);
+
             var productos = await _productoRepo.ListAsync(spec);
-            return Ok(_mapper.Map
-                         <IReadOnlyList<Producto>, IReadOnlyList<ProductoDto>>(productos));
+
+            var data = _mapper.Map
+                         <IReadOnlyList<Producto>, IReadOnlyList<ProductoDto>>(productos);
+
+            return Ok(new Pagination<ProductoDto>(productParams.PageIndex,productParams.PageSize, totalItems,data));
         }
 
         [HttpGet("{id}")]

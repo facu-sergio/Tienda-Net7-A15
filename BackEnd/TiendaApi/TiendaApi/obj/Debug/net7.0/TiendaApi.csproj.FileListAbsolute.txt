@@ -1,10 +1,13 @@
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\appsettings.json
+C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\TiendaApi.staticwebassets.runtime.json
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\TiendaApi.exe
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\TiendaApi.deps.json
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\TiendaApi.runtimeconfig.json
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\TiendaApi.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\TiendaApi.pdb
+C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Humanizer.dll
@@ -78,6 +81,3 @@ C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\Tien
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\obj\Debug\net7.0\TiendaApi.pdb
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\obj\Debug\net7.0\TiendaApi.genruntimeconfig.cache
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\obj\Debug\net7.0\ref\TiendaApi.dll
-C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\AutoMapper.dll
-C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\TiendaApi.staticwebassets.runtime.json
