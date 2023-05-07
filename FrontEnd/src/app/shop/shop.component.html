@@ -1,23 +1,23 @@
 <div class="container">
   <div class="row">
     <section class="col-3">
-      <h5 class="text-warning ms-3">Sort</h5>
-      <Select class="form-select mb-4">
-        <option >Alphabetical</option>
-        <option >Price: Low to high</option>
-        <option >Price: High to low </option>
+      <h5 class="text-warning ms-3">Ordenar por:</h5>
+      <Select class="form-select mb-4" (change)="onSortSelected($event)">
+        <option *ngFor="let sort of sortOptions" value="{{sort.value}}">
+           {{sort.name}} 
+        </option>
       </Select>
       <h5 class="text-warning ms-3">Marcas</h5>
       <ul class="list-group my-3" >
         <li class="list-group-item" *ngFor="let marca of marcas"
-          [class.active] = "marca.id == marcaIdSelected"
+          [class.active] = "marca.id == shopParams.marcaId"
           [value]="marca.id"
-         (click)="onMarcaSelected(marca.id)"> {{marca.nombre}} </li>
+          (click)="onMarcaSelected(marca.id)"> {{marca.nombre}} </li>
       </ul>
       <h5 class="text-warning ms-3">Tipos</h5>
       <ul class="list-group my-3">
         <li class="list-group-item" *ngFor=" let tipo of tipos"
-          [class.active] = "tipo.id == tipoIdSelected"
+          [class.active] = "tipo.id == shopParams.tipoId"
           [value]="tipo.id"
           (click)="onTipoSelected(tipo.id)"> {{tipo.nombre}} </li>        
       </ul>
@@ -35,10 +35,23 @@
           <button class="btn btn-outline-success">Reset</button>
         </div>
       </div>
-      <div class="row row-cols-3 g-3">
+      <div class="row row-cols-3 g-3 mb-4">
         <div class="col" *ngFor="let producto of productos">
             <app-producto-item [producto]="producto"></app-producto-item>
         </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <pagination
+         [boundaryLinks]="true" 
+         [totalItems]="totalCount"
+         [itemsPerPage]="shopParams.pageSize"
+         [maxSize]="10"
+         (pageChanged)="onPageChanged($event)"
+         previousText="&lsaquo;"
+         nextText="&rsaquo;"
+         firstText="&laquo;"
+         lastText="&raquo;">
+      </pagination>
       </div>
     </section>
   </div>

@@ -3,6 +3,7 @@ import { Producto } from '../shared/models/producto';
 import { ShopService } from './shop.service';
 import { Marca } from '../shared/models/marca';
 import { tipo } from '../shared/models/tipo';
+import { ShopParams } from '../shared/models/shopParams';
 
 @Component({
   selector: 'app-shop',
@@ -13,9 +14,13 @@ export class ShopComponent implements OnInit{
   productos: Producto[] = [];
   tipos: tipo[] = [];
   marcas: Marca[] = [];
-  marcaIdSelected = 0;
-  tipoIdSelected = 0;
-
+  shopParams =  new ShopParams();
+  sortOptions = [
+    {'name':'Alfabetico','value':'name'},
+    {'name':'Menor precio','value':'priceAsc'},
+    {'name':'Mayor precio','value':'priceDesc'}
+];
+  totalCount = 0;
   constructor(private shopService:ShopService){}
   ngOnInit(): void {
    this.getProductos();
@@ -24,8 +29,13 @@ export class ShopComponent implements OnInit{
   }
 
   getProductos(){
-    this.shopService.getProductos(this.marcaIdSelected,this.tipoIdSelected).subscribe({
-      next: response => this.productos = response.data,
+    this.shopService.getProductos(this.shopParams).subscribe({
+      next: response => {
+        this.productos = response.data;
+        this.shopParams.pageSize = response.pageSize;
+        this.shopParams.pageNumber = response.pageIndex;
+        this.totalCount =  response.count;
+      },
       error: error => console.log(error)
     })
   }
@@ -45,12 +55,24 @@ export class ShopComponent implements OnInit{
   }
 
   onMarcaSelected(marcaId: number){
-    this.marcaIdSelected =  marcaId;
+    this.shopParams.marcaId =  marcaId;
     this.getProductos();
   }
 
   onTipoSelected(tipoId: number){
-    this.tipoIdSelected = tipoId;
+    this.shopParams.tipoId = tipoId;
     this.getProductos();
+  }
+
+  onSortSelected($event:any){
+    this.shopParams.sort = $event.target.value;
+    this.getProductos();
+  }
+
+  onPageChanged(event: any ){
+    if(this.shopParams.pageNumber !== event.page){
+      this.shopParams.pageNumber = event.page;
+      this.getProductos();
+    }
   }
 }
