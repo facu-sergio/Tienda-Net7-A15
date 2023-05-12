@@ -22,7 +22,12 @@ export class ShopService {
     params =  params.append('Sort',shopParams.sort);
     params =  params.append('pageIndex',shopParams.pageNumber);
     params =  params.append('pageSize',shopParams.pageSize);
+    if(shopParams.search) params = params.append('search', shopParams.search);
     return this.http.get<Pagination<Producto[]>>(this.baseUrl + 'productos',{params});
+  }
+
+  getProducto(id: number){
+    return this.http.get<Producto>(this.baseUrl + 'productos/' + id);
   }
 
   getMarcas(){
@@ -32,4 +37,6 @@ export class ShopService {
   getTipos(){
     return this.http.get<tipo[]>(this.baseUrl + 'productos/tipos');
   }
+
+  
 }

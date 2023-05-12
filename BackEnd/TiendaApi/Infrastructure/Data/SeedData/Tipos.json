@@ -8,5 +8,14 @@
 
   {
     "Nombre": "Lavandinas"
+  },
+  {
+    "Nombre": "Limpieza cocina"
+  },
+  {
+    "Nombre": "Limpieza baño"
+  },
+  {
+    "Nombre": "Limpieza de piso y superficies"
   }
 ]
