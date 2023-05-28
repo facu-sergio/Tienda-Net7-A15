@@ -32,6 +32,8 @@ C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\Tien
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\StackExchange.Redis.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
