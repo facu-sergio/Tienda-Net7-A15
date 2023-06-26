@@ -11,6 +11,8 @@ C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\Tien
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Humanizer.dll
+C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\facu1\OneDrive\Escritorio\　\Programacion\Tienda-Net7-A15\BackEnd\TiendaApi\TiendaApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
